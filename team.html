@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-lg-5">
@@ -28,58 +28,57 @@
         </div>
     </nav>
 
-    <!-- Contenuto centrale -->
-    <header class="py-5">
-        <div class="container px-lg-5">
-            <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
-                <div class="m-4 m-lg-5">
-                    <h1 class="display-5 fw-bold text-primary">Il Team di Sviluppo</h1>
-                    <p class="fs-4 mb-5">
-                        Qui puoi vedere l’intero team che ha lavorato al progetto <strong>Future Me</strong>.
-                    </p>
+    <!-- Contenuto centrale compatto -->
+    <main class="flex-fill d-flex align-items-center">
+        <div class="container text-center">
 
-                    <!-- Griglia foto 3x2 -->
-                    <div class="row gx-3 gy-4">
+            <h1 class="display-5 fw-bold text-primary mb-4">Il Team di Sviluppo</h1>
+            <p class="fs-5 mb-5">
+                Qui puoi vedere l’intero team che ha lavorato al progetto <strong>Future Me</strong>.
+            </p>
 
-                        <!-- Riga 1 -->
-                        <div class="col-lg-4 col-md-6 col-12 text-center">
-                            <img src="assets/albi rove-photoaidcom-cropped.png" class="rounded mb-2" alt="Alberto Roveda" style="max-height:140px; width:auto; object-fit:cover;">
-                            <h5>Alberto Roveda</h5>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 text-center">
-                            <img src="assets/albi G-photoaidcom-cropped.png" class="rounded mb-2" alt="Alberto Giarduz" style="max-height:140px; width:auto; object-fit:cover;">
-                            <h5>Alberto Giarduz</h5>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 text-center">
-                            <img src="assets/antonio-photoaidcom-cropped.png" class="rounded mb-2" alt="Antonio Lauriano" style="max-height:140px; width:auto; object-fit:cover;">
-                            <h5>Antonio Lauriano</h5>
-                        </div>
+            <!-- Griglia foto 3x2 compatta -->
+            <div class="row gx-4 gy-4 justify-content-center align-items-center">
 
-                        <!-- Riga 2 -->
-                        <div class="col-lg-4 col-md-6 col-12 text-center">
-                            <img src="assets/enrico-photoaidcom-cropped.png" class="rounded mb-2" alt="Enrico Zonta" style="max-height:140px; width:auto; object-fit:cover;">
-                            <h5>Enrico Zonta</h5>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 text-center">
-                            <img src="assets/giacomo-photoaidcom-cropped.png" class="rounded mb-2" alt="Giacomo Marafon" style="max-height:140px; width:auto; object-fit:cover;">
-                            <h5>Giacomo Marafon</h5>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 text-center">
-                            <img src="assets/nicola-photoaidcom-cropped.png" class="rounded mb-2" alt="Nicola Iovino" style="max-height:140px; width:auto; object-fit:cover;">
-                            <h5>Nicola Iovino</h5>
-                        </div>
-
-                    </div> <!-- row -->
-
+                <div class="col-lg-4 col-md-6 col-12 text-center">
+                    <img src="assets/albi rove-photoaidcom-cropped.png" class="rounded mb-2" alt="Alberto Roveda" style="height:120px; width:auto; object-fit:cover;">
+                    <h5>Alberto Roveda</h5>
                 </div>
-            </div>
+
+                <div class="col-lg-4 col-md-6 col-12 text-center">
+                    <img src="assets/albi G-photoaidcom-cropped.png" class="rounded mb-2" alt="Alberto Giarduz" style="height:120px; width:auto; object-fit:cover;">
+                    <h5>Alberto Giarduz</h5>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 text-center">
+                    <img src="assets/antonio-photoaidcom-cropped.png" class="rounded mb-2" alt="Antonio Lauriano" style="height:120px; width:auto; object-fit:cover;">
+                    <h5>Antonio Lauriano</h5>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 text-center">
+                    <img src="assets/enrico-photoaidcom-cropped.png" class="rounded mb-2" alt="Enrico Zonta" style="height:120px; width:auto; object-fit:cover;">
+                    <h5>Enrico Zonta</h5>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 text-center">
+                    <img src="assets/giacomo-photoaidcom-cropped.png" class="rounded mb-2" alt="Giacomo Marafon" style="height:120px; width:auto; object-fit:cover;">
+                    <h5>Giacomo Marafon</h5>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 text-center">
+                    <img src="assets/nicola-photoaidcom-cropped.png" class="rounded mb-2" alt="Nicola Iovino" style="height:120px; width:auto; object-fit:cover;">
+                    <h5>Nicola Iovino</h5>
+                </div>
+
+            </div> <!-- row -->
+
         </div>
-    </header>
+    </main>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Human-Computer Interaction &copy; 2025/2026</p>
+    <footer class="mt-auto py-3 bg-dark">
+        <div class="container text-center">
+            <p class="m-0 text-white">Human-Computer Interaction &copy; 2025/2026</p>
         </div>
     </footer>
 
